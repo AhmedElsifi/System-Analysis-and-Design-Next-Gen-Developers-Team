@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website Description" />
+    <link rel="stylesheet" href="../CSS/cinema.css" />
+    <link rel="stylesheet" href="../CSS/nav and footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../CSS/nav & footer.css" />
+    <link rel="icon" href="../images/icon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akronim&family=Farsan&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Cinema</title>
+  </head>
+  <body>
+    <!-- the navigation bar which we will use for every page -->
+    <nav>
+      <div class="nav-container">
+        <p id="logo">ShopZone</p>
+        <a href="../index.html" class="nav-item underline-effect-white">Home</a>
+        <a href="restaurant page.html" class="nav-item underline-effect-white"
+          >Food</a
+        >
+        <a href="Electronics page.html" class="nav-item underline-effect-white"
+          >Electronics</a
+        >
+        <a href="Furniture.html" class="nav-item underline-effect-white"
+          >Furniture</a
+        >
+        <a href="cinema page.html" class="nav-item underline-effect-white"
+          >Cinema</a
+        >
+        <a href="kids page.html" class="nav-item underline-effect-white"
+          >Kids Area</a
+        >
+        <a href="perfume page.html" class="nav-item underline-effect-white"
+          >Perfume</a
+        >
+        <a href="contact us page.html" class="nav-item underline-effect-white"
+          >Contact Us</a
+        >
+        <a href="login page.html" class="nav-item underline-effect-white"
+          >Sign Up</a
+        >
+        <div class="icons">
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- MY CODE -->
+    <div class="slider">
+      <button class="slider-button prev" onclick="prevSlide()">
+        <img src="../Images/left arrow.png" alt="Previous" />
+      </button>
+      <button class="slider-button next" onclick="nextSlide()">
+        <img src="../Images/right arrow.png" alt="Next" />
+      </button>
+
+      <div class="slide">
+        <div class="item" style="background-image: url(../Images/mo.jpg)">
+          <div class="content">
+            <div class="name">The Monster Beneath Us</div>
+            <div class="description">
+              "The Monster Beneath Us" is a psychological horror about a mother
+              and her son who move to a remote house and discover a dark
+              presence hiding in the basement
+            </div>
+            <a
+              href="https://www.youtube.com/embed/l-X4IdaWojI?rel=0"
+              class="promo"
+              >Watch promo</a
+            >
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(../Images/bar2.jpg)">
+          <div class="content">
+            <div class="name">Ballerina</div>
+            <div class="description">
+              "Ballerina" follows a skilled assassin named Rooney on a mission
+              of revenge, using her deadly training and ballet background to
+              hunt those who wronged her
+            </div>
+            <a
+              href="https://www.youtube.com/embed/Yqhyyla8ZbI?rel=0"
+              class="promo"
+              >Watch promo</a
+            >
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(../Images/lilo5.jpg)">
+          <div class="content">
+            <div class="name">Lilo & stitch</div>
+            <div class="description">
+              "Lilo & Stitch" is about a Hawaiian girl who adopts an alien
+              thinking he’s a dog. Together, they learn that family means love
+              and never being left behind
+            </div>
+            <a
+              href="https://www.youtube.com/embed/VWqJifMMgZE?rel=0"
+              class="promo"
+              >Watch promo</a
+            >
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(../Images/293129.jpg)">
+          <div class="content">
+            <div class="name">Siko Siko</div>
+            <div class="description">
+              "Siko Siko" is a comedy film about two friends who launch a mobile
+              game to sell illegal inheritance, but success leads them into
+              trouble with a dangerous gang
+            </div>
+            <a
+              href="https://www.youtube.com/embed/EKpErsgH_FM?rel=0"
+              class="promo"
+              >Watch promo</a
+            >
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(../Images/how2.jpg)">
+          <div class="content">
+            <div class="name">How to train your dragon</div>
+            <div class="description">
+              ""How to Train Your Dragon" follows a young Viking, Hiccup, who
+              befriends a dragon instead of killing it. Their bond changes
+              everything he thought he knew about dragons.
+            </div>
+            <a
+              href="https://www.youtube.com/embed/22w7z_lT6YM?rel=0"
+              class="promo"
+              >Watch promo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="mov">MOVIES</h1>
+    <div class="container">
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/lio.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬Lilo & Stitch</h3>
+          <ul>
+            <li>Duration: 1h 25min</li>
+            <li>Day: Monday</li>
+            <li>Showtime: 3:00 PM</li>
+            <li class="price">Ticket Price: EGP 120</li>
+            <li>Rating: 8.9 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/zoo.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬Zootopia 2</h3>
+          <ul>
+            <li>Duration: 1h 50min</li>
+            <li>Day: Friday</li>
+            <li>Showtime: 1:00 PM</li>
+            <li class="price">Ticket Price: EGP 100</li>
+            <li>Rating: 8.0 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/batman.jpeg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬The Batman (2022)</h3>
+          <ul>
+            <li>Duration: 2h 56min</li>
+            <li>Day: Saturday</li>
+            <li>Showtime: 6:00 PM</li>
+            <li class="price">Ticket Price: EGP 130</li>
+            <li>Rating: 8.3 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/how.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬How toTrainYourDragon</h3>
+          <ul>
+            <li>Duration: 1h 38min</li>
+            <li>Day: Sunday</li>
+            <li>Showtime: 4:00 PM</li>
+            <li class="price">Ticket Price: EGP 150</li>
+            <li>Rating: 9.0 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/Ballerina.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬Ballerina</h3>
+          <ul>
+            <li>Duration: 1h 45min</li>
+            <li>Day: Thursday</li>
+            <li>Showtime: 8:00 PM</li>
+            <li class="price">Ticket Price: EGP 120</li>
+            <li>Rating: 7.5 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/monster2.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬The Monster Beneath Us</h3>
+          <ul>
+            <li>Duration: 1h 30min</li>
+            <li>Day: Tuesday</li>
+            <li>Showtime: 9:00 PM</li>
+            <li class="price">Ticket Price: EGP 110</li>
+            <li>Rating: 8.4 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/The Ritual.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬The Ritual</h3>
+          <ul>
+            <li>Duration: 1h 30min</li>
+            <li>Day: Wednesday</li>
+            <li>Showtime: 10:00 PM</li>
+            <li class="price">Ticket Price: EGP 110</li>
+            <li>Rating: 7.4 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/Thunderbolts.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬Thunderbolts</h3>
+          <ul>
+            <li>Duration: 2h 10min</li>
+            <li>Day: Friday</li>
+            <li>Showtime: 7:00 PM</li>
+            <li class="price">Ticket Price: EGP 140</li>
+            <li>Rating: 8.2 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/rest.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬Restart</h3>
+          <ul>
+            <li>Duration: 1h 40min</li>
+            <li>Day: Monday</li>
+            <li>Showtime: 5:00 PM</li>
+            <li class="price">Ticket Price: EGP 140</li>
+            <li>Rating: 8.2 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/siko.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬Siko Siko</h3>
+          <ul>
+            <li>Duration: 1h 40min</li>
+            <li>Day: Sunday</li>
+            <li>Showtime: 2:00 PM</li>
+            <li class="price">Ticket Price: EGP 130</li>
+            <li>Rating: 8.5 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/aiX.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬Mashro3 X</h3>
+          <ul>
+            <li>Duration: 2h 0min</li>
+            <li>Day: Wednesday</li>
+            <li>Showtime: 9:00 PM</li>
+            <li class="price">Ticket Price: EGP 130</li>
+            <li>Rating: 8.7 / 10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Movie_card card">
+        <div class="Movie-image">
+          <img src="../Images/fr3on.jpg" alt="Image isn't found" />
+          <button class="add-to-cart add-to-cart-flash">Add to cart</button>
+        </div>
+        <div class="Movie-info">
+          <h3 class="Movie-title product-name">🎬Hamlet fr3on</h3>
+          <ul>
+            <li>Duration: 2h 0min</li>
+            <li>Day: Saturday</li>
+            <li>Showtime: 9:00 PM</li>
+            <li class="price">Ticket Price: EGP 100</li>
+            <li>Rating: 7.0 / 10</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- the footer which we will use for every page -->
+    <footer>
+      <div class="footer-container">
+        <section class="footer-sections">
+          <h3>Exclusive</h3>
+          <div class="footer-section-content footer-section-content1">
+            <h5>Get 10% off your first order</h5>
+            <div class="email-sec">
+              <input type="email" placeholder="Enter your email" />
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </section>
+        <section class="footer-sections">
+          <h3>Support</h3>
+          <div class="footer-section-content footer-section-content2">
+            <h5>
+              Mustafa Kamel Axis, near Cairo English School, Suez Road, 1st
+              Settlement
+            </h5>
+            <h5>ShopZone@gmail.com</h5>
+            <h5>+201234567890</h5>
+          </div>
+        </section>
+        <section class="footer-sections">
+          <h3>Account</h3>
+          <div class="footer-section-content footer-section-content3">
+            <a href="login page.html" class="underline-effect-white"
+              >Login / Register</a
+            >
+            <a href="cart.html" class="underline-effect-white">Cart</a>
+            <a href="../index.html" class="underline-effect-white">Shop</a>
+          </div>
+        </section>
+        <section class="footer-sections">
+          <h3>Quick Link</h3>
+          <div class="footer-section-content footer-section-content4">
+            <a href="../index.html" class="underline-effect-white">Home</a>
+            <a href="restaurant page.html" class="underline-effect-white"
+              >Food</a
+            >
+            <a href="Electronics page.html" class="underline-effect-white"
+              >Electronics</a
+            >
+            <a href="Furniture.html" class="underline-effect-white"
+              >Furniture</a
+            >
+            <a href="cinema page.html" class="underline-effect-white">Cinema</a>
+            <a href="kids page.html" class="underline-effect-white"
+              >Kids Area</a
+            >
+            <a href="perfume page.html" class="underline-effect-white"
+              >Perfume</a
+            >
+            <a href="contact us page.html" class="underline-effect-white"
+              >Contact Us</a
+            >
+            <a href="login page.html" class="underline-effect-white"
+              >Log in / Register</a
+            >
+            <a href="cart.html" class="underline-effect-white">Cart</a>
+          </div>
+        </section>
+        <section class="footer-sections">
+          <h3>Download App</h3>
+          <div class="footer-section-content footer-section-content5">
+            Save 3$ With App New User Only
+            <div class="img-cont">
+              <img src="../Images/Qr Code.png" alt="" class="qr" />
+              <div class="img-down">
+                <a href="#">
+                  <img
+                    src="../Images/google play.png"
+                    alt=""
+                    class="google-play"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="../Images/appstore.png"
+                    alt=""
+                    class="apple-store"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="socials">
+              <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://x.com/">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <hr />
+      <h5>&copy; Copyright ShopZone 2025. All rights reserved</h5>
+    </footer>
+    <script src="../JAVASCRIPT/cinema.js" defer></script>
+    <script src="../JAVASCRIPT/cart.js"></script>
+  </body>
+</html>

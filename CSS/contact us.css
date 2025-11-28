@@ -1,0 +1,103 @@
+.US {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ccabda;
+}
+.contact_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.contact_image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact_image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.get_in_touch {
+  flex: 1;
+  max-width: 600px;
+}
+
+.get_in_touch_header {
+  font-size: 2rem;
+  color: #ccabda;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.get_in_touch_text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.fields input,
+.fields textarea {
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 280px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.fields textarea {
+  width: 100%;
+  height: 56px;
+  resize: vertical;
+}
+
+.fields input:focus,
+.fields textarea:focus {
+  border-color: #ccabda;
+  outline: none;
+  box-shadow: 0 0 8px rgba(145, 92, 168, 0.3);
+}
+
+.send_message {
+  height: 56px;
+  width: 200px;
+  background-color: #ccabda;
+  color: white;
+  border: #ccabda solid 1px;
+  font-size: 16px;
+  font-weight: 600px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send_message:hover {
+  background-color: #f7f7f7;
+  color: #ccabda;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

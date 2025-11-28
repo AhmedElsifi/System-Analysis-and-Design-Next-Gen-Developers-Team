@@ -1,0 +1,329 @@
+:root {
+  --main-color: #ccabda;
+  --sub-color1: #222222;
+  --sub-color2: #ffdd95;
+  --sub-color3: #5cb7a2;
+  --main-background-color: #f7f7f7;
+}
+
+/* effects */
+.underline-effect-white {
+  background-image: linear-gradient(#f7f7f7, #f7f7f7);
+  background-size: 0 5px;
+  background-position: 0 115%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s;
+  width: fit-content;
+}
+
+.underline-effect-white:hover {
+  background-size: 100% 5px;
+}
+
+.underline-effect-black {
+  background-image: linear-gradient(#222222, #222222);
+  background-size: 0 5px;
+  background-position: 0 115%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s;
+  width: fit-content;
+}
+
+.underline-effect-black:hover {
+  background-size: 100% 5px;
+}
+
+.akronim-regular {
+  font-family: "Akronim", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cairo {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0px;
+  background-color: var(--main-background-color);
+}
+
+.restaurant_image {
+  width: 1890px;
+  height: 620px;
+  background-image: url(../Images/photo-ELE.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+.restaurant_image h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.restaurant_image p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.restaurant_image .btn {
+  width: 200px;
+  background-color: var(--main-color);
+  color: var(--background-color);
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.restaurant_image .btn:hover {
+  background-color: var(--main-color);
+  color: var(--background-color);
+}
+.restaurant_image .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--main-color);
+}
+.product_title {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.card {
+  width: 270px;
+  height: 350px;
+}
+
+.card-img-container {
+  position: relative;
+  background-color: #eeeeee;
+  width: 270px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-img-container img {
+  object-fit: contain;
+  width: 175px;
+}
+
+.card .tag {
+  position: absolute;
+  background-color: #ccabda;
+  color: #f7f7f7;
+  width: 55px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  top: 12px;
+  left: 12px;
+  margin: 0px;
+  font-size: 12px;
+}
+
+.card h4 {
+  margin: 16px 0px 8px;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  transition-duration: 0.2s;
+}
+
+.card h4:hover {
+  color: #ccabda;
+}
+
+.add-to-cart-flash {
+  background-color: #222222;
+  position: absolute;
+  bottom: 0px;
+  color: #f7f7f7;
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transform: translateY(40px);
+}
+
+.add-to-cart-flash:hover {
+  color: #222222;
+  background-color: #f7f7f7;
+  border: #222222 solid 1px;
+  border-radius: 0px 4px;
+}
+
+.card-img-container:hover .add-to-cart-flash {
+  transform: translateY(0px);
+}
+
+.card h5 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ccabda;
+  transition-duration: 0.2s;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  margin: auto;
+}
+.container .search_bar {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  position: relative;
+  bottom: 350px;
+}
+
+.container .search_bar input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.container .search_bar i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #999;
+}
+.container .search_bar input:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+.stars {
+  position: relative;
+  bottom: 30px;
+  left: 150px;
+  font-size: 15px;
+}
+.card-img-container .like {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.like .fa-eye {
+  position: relative;
+  top: 20px;
+}
+.like .fa-heart {
+  position: relative;
+  top: 10px;
+}
+.heart-icon {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.heart-icon.liked {
+  color: red;
+}
+
+body.dark-mode {
+  background-color: var(--dark-mode-background-color);
+  color: #eee;
+}
+body.dark-mode nav {
+  background-color: var(--dark-mode-main-color);
+}
+
+body.dark-mode .nav-item,
+body.dark-mode .icons i {
+  color: #eee;
+}
+
+body.dark-mode .card {
+  color: #f0f0f0;
+}
+body.dark-mode .tag {
+  background-color: var(--dark-mode-main-color);
+  color: #f7f7f7;
+}
+body.dark-mode .like {
+  color: #f7f7f7;
+}
+
+body.dark-mode footer {
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark-mode footer a {
+  color: #aaa;
+}
+
+body.dark-mode input,
+body.dark-mode input::placeholder {
+  background-color: #333;
+  color: #eee;
+}
+body.dark-mode .card-img-container {
+  background-color: #333;
+}
+.add-to-cart-flash {
+  transition: 0.3s;
+}
+
+body.dark-mode .add-to-cart-flash {
+  background-color: var(--main-background-color);
+  color: var(--sub-color1);
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website Description" />
+    <link rel="stylesheet" href="../CSS/nav and footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akronim&family=Farsan&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="../CSS/restaurant.css" />
+    <meta http-equiv="refresh" content="" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <p id="logo">ShopZone</p>
+        <a href="../index.html" class="nav-item underline-effect-white">Home</a>
+        <a href="restaurant page.html" class="nav-item underline-effect-white"
+          >Food</a
+        >
+        <a href="Electronics page.html" class="nav-item underline-effect-white"
+          >Electronics</a
+        >
+        <a href="Furniture.html" class="nav-item underline-effect-white"
+          >Furniture</a
+        >
+        <a href="cinema page.html" class="nav-item underline-effect-white"
+          >Cinema</a
+        >
+        <a href="kids page.html" class="nav-item underline-effect-white"
+          >Kids Area</a
+        >
+        <a href="perfume page.html" class="nav-item underline-effect-white"
+          >Perfume</a
+        >
+        <a href="contact us page.html" class="nav-item underline-effect-white"
+          >Contact Us</a
+        >
+        <a href="login page.html" class="nav-item underline-effect-white"
+          >Sign Up</a
+        >
+        <div class="icons">
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="restaurant_image">
+      <h1 class="type">Welcome to a World of Taste</h1>
+      <p>
+        We offer a variety of delicious dishes made with fresh ingredients. Join
+        us for a meal and experience the best of culinary delights.
+      </p>
+      <button
+        class="btn"
+        onclick="window.location.href='restaurant page.html#main-dishes'"
+      >
+        Order Now
+      </button>
+    </div>
+    <div class="container">
+      <div class="gallery_dishes">
+        <h2>Some Items</h2>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="../Images/eat.webp" alt="Dish 1" />
+            <p>Fast Food</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../Images/eat2.jpg" alt="Dish 2" />
+            <p>Mean Meals</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../Images/eat3.webp" alt="Dish 3" />
+            <p>Desserts</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../Images/drink.jpg" alt="Dish 4" />
+            <p>Hot Drink</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../Images/drink2.jpg" alt="Dish 4" />
+            <p>Fresh Drink</p>
+          </div>
+        </div>
+      </div>
+      <section class="reservation">
+        <h2>Reserve Your Table</h2>
+        <input type="text" placeholder="Your Name" />
+        <input type="date" />
+        <input type="time" />
+        <input type="number" placeholder="Guests" />
+        <br />
+        <button>Book Now</button>
+      </section>
+      <section class="category">
+        <h2 id="main-dishes">🍽️ Main Dishes</h2>
+        <div class="background-icons">
+          <img src="../Images/Vegan-burger.avif" alt="Burger" />
+          <img src="../Images/Corn-Salad.jpg" alt="Salad" />
+          <img src="../Images/pasta.webp" alt="Pasta" />
+        </div>
+      </section>
+      <section class="menu-section">
+        <div class="menu-grid">
+          <div class="menu-card card">
+            <img src="../Images/Grilled-Chicken.webp" alt="Grilled Chicken" />
+            <h4 class="product-name">Grilled Chicken</h4>
+            <p>Marinated chicken served with rice and grilled vegetables.</p>
+            <span class="price">$20</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img src="../Images/Shrimp Pasta.jpg" alt="Shrimp Pasta" />
+            <h4 class="product-name">Shrimp Pasta</h4>
+            <p>Rich creamy pasta with fresh shrimp and herbs.</p>
+            <span class="price">$32</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img src="../Images/Vegan-burger.avif" alt="Vegan Burger" />
+            <h4 class="product-name">Vegan Burger</h4>
+            <p>Plant-based patty with lettuce, tomato, and special sauce.</p>
+            <span class="price">$13</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img src="../Images/Green-Salad.jpg" alt="salad" />
+            <h4 class="product-name">Green-Salad</h4>
+            <p>
+              A refreshing mix of lettuce, cucumber, tomatoes, and herbs,
+              drizzled with olive oil and lemon.
+            </p>
+            <span class="price">$6</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img
+              src="../Images/portuguese.jpg"
+              alt="Portuguese braised steak & onions"
+            />
+            <h4 class="product-name">Portuguese braised steak & onions</h4>
+            <p>
+              In Portugal this braise would be served with fried potatoes or
+              rice, but it goes just as well with a pillow of buttery mash.
+            </p>
+            <span class="price">$79</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img src="../Images/Mixed-Grill.jpg" alt="Mixed Grill" />
+            <h4 class="product-name">Mixed Grill</h4>
+            <p>
+              An ultimate mix of grilled meats including chicken, kofta, lamb,
+              and kebab.Selection of grilled meats served with tahini and fries.
+            </p>
+            <span class="price">$96</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <h2>🍰 Desserts and🥂Drinks</h2>
+        <div class="background-icons">
+          <img src="../Images/drink.jpg" alt="Coffee" />
+          <img src="../Images/drink2.jpg" alt="Juice" />
+          <img src="../Images/Chocolate-Cake.jpg" alt="Cake" />
+        </div>
+      </section>
+      <section class="menu-section">
+        <div class="menu-grid">
+          <div class="menu-card card">
+            <img src="../Images/Chocolate-Cake.jpg" alt="Chocolate Cake" />
+            <h4 class="product-name">Chocolate Cake</h4>
+            <p>
+              Indulge in a rich, moist chocolate cake topped with velvety fudge.
+              Pure bliss in every bite.
+            </p>
+
+            <span class="price">$8 each piece </span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img src="../Images/eat3.webp" alt="Kunafa" />
+            <h4 class="product-name">Kunafa</h4>
+            <p>
+              "A golden, crispy kunafa filled with creamy delight and soaked in
+              sweet syrup Perfectly sweet, crunchy, and melts in your mouth."
+            </p>
+            <span class="price">$4 each piece</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img src="../Images/CherryDelight.jpg" alt="CherryDelight" />
+            <h4 class="product-name">Cherry Delight</h4>
+            <p>
+              The beauty of this cherry delight is in the layers: crunchy graham
+              crackers.
+            </p>
+            <span class="price">$25 each piece</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img src="../Images/WalnutWhipMocha.jpg" alt="Walnut mocha" />
+            <h4 class="product-name">Walnut mocha</h4>
+            <p>
+              Mix up your morning coffee with our walnut mocha, inspired by
+              retro Christmas flavours.
+            </p>
+            <span class="price">$9</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img src="../Images/Vanilla-chai.jpg" alt="Vanilla chai " />
+            <h4 class="product-name">Vanilla chai</h4>
+            <p>
+              Chai tea is made by brewing delicate black tea with aromatic
+              Indian spices.
+            </p>
+            <span class="price">$17</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+          <div class="menu-card card">
+            <img src="../Images/lebanese-lemonade.jpg" alt="lemonade" />
+            <h4 class="product-name">Lemonade</h4>
+            <p>boozy summer cocktail some fresh mint and lemon slices .</p>
+            <span class="price">$9</span>
+            <button class="add-to-cart-flash">Add To Cart</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <section class="footer-sections">
+          <h3>Exclusive</h3>
+          <div class="footer-section-content footer-section-content1">
+            <h5>Get 10% off your first order</h5>
+            <div class="email-sec">
+              <input type="email" placeholder="Enter your email" />
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </section>
+        <section class="footer-sections">
+          <h3>Support</h3>
+          <div class="footer-section-content footer-section-content2">
+            <h5>
+              Mustafa Kamel Axis, near Cairo English School, Suez Road, 1st
+              Settlement
+            </h5>
+            <h5>ShopZone@gmail.com</h5>
+            <h5>+201234567890</h5>
+          </div>
+        </section>
+        <section class="footer-sections">
+          <h3>Account</h3>
+          <div class="footer-section-content footer-section-content3">
+            <a href="login page.html" class="underline-effect-white"
+              >Login / Register</a
+            >
+            <a href="cart.html" class="underline-effect-white">Cart</a>
+            <a href="../index.html" class="underline-effect-white">Shop</a>
+          </div>
+        </section>
+        <section class="footer-sections">
+          <h3>Quick Link</h3>
+          <div class="footer-section-content footer-section-content4">
+            <a href="../index.html" class="underline-effect-white">Home</a>
+            <a href="restaurant page.html" class="underline-effect-white"
+              >Food</a
+            >
+            <a href="Electronics page.html" class="underline-effect-white"
+              >Electronics</a
+            >
+            <a href="Furniture.html" class="underline-effect-white"
+              >Furniture</a
+            >
+            <a href="cinema page.html" class="underline-effect-white">Cinema</a>
+            <a href="kids page.html" class="underline-effect-white"
+              >Kids Area</a
+            >
+            <a href="perfume page.html" class="underline-effect-white"
+              >Perfume</a
+            >
+            <a href="contact us page.html" class="underline-effect-white"
+              >Contact Us</a
+            >
+            <a href="login page.html" class="underline-effect-white"
+              >Log in / Register</a
+            >
+            <a href="cart.html" class="underline-effect-white">Cart</a>
+          </div>
+        </section>
+        <section class="footer-sections">
+          <h3>Download App</h3>
+          <div class="footer-section-content footer-section-content5">
+            Save 3$ With App New User Only
+            <div class="img-cont">
+              <img src="../Images/Qr Code.png" alt="" class="qr" />
+              <div class="img-down">
+                <a href="#">
+                  <img
+                    src="../Images/google play.png"
+                    alt=""
+                    class="google-play"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="../Images/appstore.png"
+                    alt=""
+                    class="apple-store"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="socials">
+              <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://x.com/">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <hr />
+      <h5>&copy; Copyright ShopZone 2025. All rights reserved</h5>
+    </footer>
+  </body>
+  <script src="../JAVASCRIPT/cart.js"></script>
+</html>

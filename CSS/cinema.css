@@ -1,0 +1,234 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 740px;
+  background: white;
+  box-shadow: 0 30px 50px #dbdbdb;
+  overflow: hidden;
+}
+
+.slider .slide .item {
+  width: 200px;
+  height: 300px;
+  top: 80%;
+  position: absolute;
+  transform: translate(0, -50%);
+  border-radius: 20px;
+  box-shadow: 0 30px 50px #505050;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide .item:nth-child(3) {
+  left: 50%;
+}
+
+.slide .item:nth-child(4) {
+  left: calc(50% + 220px);
+}
+
+.slide .item:nth-child(5) {
+  left: calc(50% + 440px);
+}
+
+.slide .item:nth-child(n + 6) {
+  left: calc(50% + 660px);
+  opacity: 0;
+}
+
+.item .content {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  width: 300px;
+  text-align: left;
+  color: #eee;
+  transform: translate(0, -50%);
+  font-family: system-ui;
+  display: none;
+}
+
+.slide .item:nth-child(2) .content {
+  display: block;
+}
+
+.content .name {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .description {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  font-size: 1rem;
+}
+
+.promo {
+  position: fixed;
+  left: 70px;
+  bottom: -100px;
+  background-color: white;
+  color: #915ca8;
+  padding: 5px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 16px;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+  z-index: 10;
+}
+
+.promo:hover {
+  background-color: #915ca8;
+  color: white;
+  transform: scale(1.05);
+}
+
+.slider-button {
+  position: absolute;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.slider-button img {
+  width: 70px;
+  height: 70px;
+}
+
+.slider-button.prev {
+  left: 1rem;
+}
+
+.slider-button.next {
+  right: 1rem;
+}
+
+@keyframes animate {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mov {
+  text-align: center;
+  color: #915ca8;
+  padding: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.Movie_card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.Movie_card:hover {
+  transform: scale(1.03);
+}
+
+.Movie_card:hover .Movie-image {
+  opacity: 0.8;
+}
+.Movie-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.Movie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.Movie-info {
+  padding: 15px;
+  flex: 1;
+}
+
+.Movie-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #915ca8;
+}
+
+.Movie-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Movie-info li {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.add-to-cart {
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #915caa;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.Movie_card:hover .add-to-cart {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
